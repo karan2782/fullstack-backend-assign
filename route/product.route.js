@@ -27,7 +27,7 @@ productRouter.post("/", auth, upload.single("image"), async (req, res) => {
     });
     res.status(201).json({ message: "Product created successfully" });
   } catch (error) {
-    res.status(500).json({message:`Error in creating the product ${error}`, product})
+    res.status(500).json({message:`Error in creating the product ${error}`})
   }
 });
 
